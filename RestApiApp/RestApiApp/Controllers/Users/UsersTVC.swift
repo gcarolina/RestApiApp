@@ -1,9 +1,6 @@
-//
 //  UsersTVC.swift
 //  RestApiApp
-//
 //  Created by Carolina on 27.12.22.
-//
 
 import UIKit
 
@@ -65,7 +62,7 @@ class UsersTVC: UITableViewController {
     }
 
     private func fetchUsers() {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }
+        guard let url = URL(string: "http://localhost:3000/users") else { return }
         
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             

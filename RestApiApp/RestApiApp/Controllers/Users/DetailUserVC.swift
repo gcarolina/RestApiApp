@@ -23,6 +23,13 @@ class DetailUserVC: UIViewController {
         setupUI()
     }
     
+    @IBAction func addressAction() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "MapVC") as? MapVC else { return }
+        vc.address = user?.address
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction func postsAction() {
         let storyboard = UIStoryboard(name: "PostFlow", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "PostsTVC") as? PostsTVC else { return }
