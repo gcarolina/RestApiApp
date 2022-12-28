@@ -12,6 +12,7 @@
 		F1042ADC295CD6A700169BAB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F1042ADB295CD6A700169BAB /* Alamofire */; };
 		F1042ADF295CD6DD00169BAB /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = F1042ADE295CD6DD00169BAB /* AlamofireImage */; };
 		F1042AE2295CDF1500169BAB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1042AE1295CDF1500169BAB /* NetworkService.swift */; };
+		F1042AE4295CE5AB00169BAB /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1042AE3295CE5AB00169BAB /* CommentVC.swift */; };
 		F119C4EF295AF543003CA3A8 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119C4EE295AF543003CA3A8 /* MapVC.swift */; };
 		F119C4F4295B9806003CA3A8 /* ToDosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119C4F3295B9806003CA3A8 /* ToDosTVC.swift */; };
 		F119C4F6295B9819003CA3A8 /* AlbumsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119C4F5295B9819003CA3A8 /* AlbumsTVC.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		F1042AD2295CCC9500169BAB /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		F1042AE1295CDF1500169BAB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F1042AE3295CE5AB00169BAB /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
 		F119C4EE295AF543003CA3A8 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		F119C4F3295B9806003CA3A8 /* ToDosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosTVC.swift; sourceTree = "<group>"; };
 		F119C4F5295B9819003CA3A8 /* AlbumsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTVC.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				F1ECCB9A295A590F00FB9DC6 /* PostsTVC.swift */,
 				F1ECCB9E295AED1800FB9DC6 /* CommentTVController.swift */,
 				F1DAC1BB295C7E5E0039FC81 /* NewPostVC.swift */,
+				F1042AE3295CE5AB00169BAB /* CommentVC.swift */,
 			);
 			path = PostsFlow;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				F1ECCB82295A435200FB9DC6 /* ActionCollectionVC.swift in Sources */,
 				F1ECCB98295A4FFB00FB9DC6 /* DetailUserVC.swift in Sources */,
 				F1ECCB7E295A430400FB9DC6 /* ImageVC.swift in Sources */,
+				F1042AE4295CE5AB00169BAB /* CommentVC.swift in Sources */,
 				F1ECCB65295A41B200FB9DC6 /* AppDelegate.swift in Sources */,
 				F1ECCB80295A433000FB9DC6 /* ActionsCVController.swift in Sources */,
 				F1DAC1BC295C7E5E0039FC81 /* NewPostVC.swift in Sources */,

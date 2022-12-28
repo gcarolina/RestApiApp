@@ -38,9 +38,9 @@ class DetailUserVC: UIViewController {
     }
     
     @IBAction func albumsAction() {
-        let storyboard = UIStoryboard(name: "AlbumsAndFotos", bundle: nil)
+        let storyboard = UIStoryboard(name: "AlbumsAndPhotos", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as! AlbumsTVC
-       // vc.user = user
+        vc.user = user
         navigationController?.pushViewController(vc, animated: true)
     }
     

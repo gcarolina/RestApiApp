@@ -67,20 +67,17 @@ class PostsTVC: UITableViewController {
         }
     }
      
-    /*
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    */
-  
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
         let currentPost = posts.remove(at: fromIndexPath.row)
         posts.insert(currentPost, at: to.row)
     }
-     */
+    
     func fetchPosts() {
         
         guard let userId = user?.id else { return }

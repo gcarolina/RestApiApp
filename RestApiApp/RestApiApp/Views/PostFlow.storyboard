@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PostsTVC-->
+        <!--Posts-->
         <scene sceneID="EtZ-mQ-p9d">
             <objects>
                 <tableViewController storyboardIdentifier="PostsTVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1bb-KX-x7C" customClass="PostsTVC" customModule="RestApiApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                             <outlet property="delegate" destination="1bb-KX-x7C" id="14m-W3-Vr6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4hq-yx-0ed">
+                    <navigationItem key="navigationItem" title="Posts" id="4hq-yx-0ed">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZTP-2c-SEQ">
                             <connections>
                                 <segue destination="dHT-YE-FPU" kind="show" id="3HJ-aW-YG6"/>
@@ -160,7 +160,7 @@
                             <constraint firstItem="baj-Ma-8d8" firstAttribute="leading" secondItem="KK9-Ki-wHY" secondAttribute="leading" constant="25" id="xiM-2k-hOV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New Post" id="U5e-PM-jtn"/>
+                    <navigationItem key="navigationItem" title="New Post" id="uhY-UZ-lOq"/>
                     <connections>
                         <outlet property="bodyTV" destination="Qyl-hA-DWN" id="mql-D1-mnE"/>
                         <outlet property="postWithAlamofire" destination="XLW-1J-EUa" id="TfL-ZH-gqz"/>
@@ -196,7 +196,7 @@
                                             <color key="textColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="owt-Uj-DPA">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="owt-Uj-DPA">
                                             <rect key="frame" x="20" y="36.666666666666671" width="60" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
@@ -218,6 +218,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjs-iq-sBI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021" y="470"/>
+        </scene>
+        <!--Full Comment's Body-->
+        <scene sceneID="Xrx-Qr-xdT">
+            <objects>
+                <viewController storyboardIdentifier="CommentVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OAg-oz-GcF" customClass="CommentVC" customModule="RestApiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LiY-Mv-ESs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDV-MC-1Jh">
+                                <rect key="frame" x="25" y="84" width="343" height="26.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Q7-0X-w9X"/>
+                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cDV-MC-1Jh" firstAttribute="top" secondItem="1Q7-0X-w9X" secondAttribute="top" constant="25" id="Mvv-LI-oRL"/>
+                            <constraint firstItem="cDV-MC-1Jh" firstAttribute="leading" secondItem="1Q7-0X-w9X" secondAttribute="leading" constant="25" id="OxF-Cj-bhh"/>
+                            <constraint firstItem="1Q7-0X-w9X" firstAttribute="trailing" secondItem="cDV-MC-1Jh" secondAttribute="trailing" constant="25" id="k4y-VT-V0J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Full Comment's Body" id="IjU-Dq-6W4"/>
+                    <connections>
+                        <outlet property="bodyLabel" destination="cDV-MC-1Jh" id="uos-zN-Twi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwr-lA-chD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="470"/>
         </scene>
     </scenes>
 </document>
