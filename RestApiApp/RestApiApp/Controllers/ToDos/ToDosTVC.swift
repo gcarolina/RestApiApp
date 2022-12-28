@@ -1,35 +1,44 @@
-//  CommentTVController.swift
+//  ToDosTVC.swift
 //  RestApiApp
-//  Created by Carolina on 27.12.22.
+//  Created by Carolina on 28.12.22.
 
 import UIKit
 
-class CommentTVController: UITableViewController {
+class ToDosTVC: UITableViewController {
 
-    var post: Post?
-    var comments: [Comment] = []
-    
+    var userId: Int?
+  //  var todos: []
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        fetchComments()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        comments.count
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let comment = comments[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = comment.email
-        cell.detailTextLabel?.text = comment.body
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -65,25 +74,15 @@ class CommentTVController: UITableViewController {
         return true
     }
     */
-    
-    func fetchComments() {
-        guard let postId = post?.id else { return }
-        let pathUrl = "\(ApiConstants.commentsPath)?postId=\(postId)"
-        
-        guard let url = URL(string: pathUrl) else { return }
-        
-        let task = URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else { return }
-            do {
-                self.comments = try JSONDecoder().decode([Comment].self, from: data)
-                print(self.comments)
-            } catch let error {
-                print(error)
-            }
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        task.resume()
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }

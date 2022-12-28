@@ -10,7 +10,6 @@ class UsersTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchUsers()
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -35,30 +34,6 @@ class UsersTVC: UITableViewController {
         guard let vc = storyboard.instantiateViewController(withIdentifier: "DetailUserVC") as? DetailUserVC else { return }
         vc.user = user
         navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            users.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-    }
-    
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-  
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        let currentUser = users.remove(at: fromIndexPath.row)
-        users.insert(currentUser, at: to.row)
     }
 
     private func fetchUsers() {

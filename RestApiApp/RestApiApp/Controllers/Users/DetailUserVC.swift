@@ -38,13 +38,17 @@ class DetailUserVC: UIViewController {
     }
     
     @IBAction func albumsAction() {
-//        let storyboard = UIStoryboard(name: "AlbumsAndFotos", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as! AlbumsTVC
-//        vc.user = user
-//        navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "AlbumsAndFotos", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as! AlbumsTVC
+       // vc.user = user
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func todosAction() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "ToDosTVC") as? ToDosTVC else { return }
+        vc.userId = user?.id
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     private func setupUI() {
