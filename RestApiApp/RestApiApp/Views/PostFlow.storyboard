@@ -20,7 +20,7 @@
                         <color key="sectionIndexColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="0pD-aQ-Q3i" detailTextLabel="FJj-wY-vtJ" style="IBUITableViewCellStyleSubtitle" id="XPX-By-m2M">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" editingAccessoryType="detailButton" textLabel="0pD-aQ-Q3i" detailTextLabel="FJj-wY-vtJ" style="IBUITableViewCellStyleSubtitle" id="XPX-By-m2M">
                                 <rect key="frame" x="0.0" y="50" width="393" height="71.666664123535156"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XPX-By-m2M" id="DIc-3u-2lo">
@@ -53,6 +53,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Posts" id="4hq-yx-0ed">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZTP-2c-SEQ">
+                            <color key="tintColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="dHT-YE-FPU" kind="show" id="3HJ-aW-YG6"/>
                             </connections>
@@ -172,7 +173,7 @@
             </objects>
             <point key="canvasLocation" x="1020.6106870229007" y="-204.92957746478874"/>
         </scene>
-        <!--CommentTV Controller-->
+        <!--Comments-->
         <scene sceneID="z6B-sv-oAT">
             <objects>
                 <tableViewController storyboardIdentifier="CommentTVController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gRT-n2-rqf" customClass="CommentTVController" customModule="RestApiApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,10 +215,11 @@
                             <outlet property="delegate" destination="gRT-n2-rqf" id="097-eN-kCh"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Comments" id="nkD-ha-fe2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjs-iq-sBI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021" y="470"/>
+            <point key="canvasLocation" x="1021" y="1123"/>
         </scene>
         <!--Full Comment's Body-->
         <scene sceneID="Xrx-Qr-xdT">
@@ -249,7 +251,100 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwr-lA-chD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1967" y="470"/>
+            <point key="canvasLocation" x="1926" y="1123"/>
+        </scene>
+        <!--Edit Post-->
+        <scene sceneID="sxo-tt-zbe">
+            <objects>
+                <viewController storyboardIdentifier="EditPostVC" title="Edit Post" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nID-g9-yZe" customClass="EditPostVC" customModule="RestApiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sZ2-09-1js">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-st-hfd">
+                                <rect key="frame" x="25" y="84" width="343" height="564.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="xTb-2s-j6L">
+                                        <rect key="frame" x="10" y="0.0" width="323" height="354.66666666666669"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter new title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-iZ-RFA">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="40"/>
+                                                <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="gMx-nL-Hj9"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MM8-a3-vMy">
+                                                <rect key="frame" x="0.0" y="75" width="323" height="279.66666666666669"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you can make changes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJX-fu-yuK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="323" height="19.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                                                        <color key="textColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5ez-E2-wms">
+                                                        <rect key="frame" x="0.0" y="29.666666666666657" width="323" height="249.99999999999997"/>
+                                                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="250" id="MeT-Ab-IDJ"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oek-3G-5hu">
+                                        <rect key="frame" x="86.333333333333329" y="534.66666666666663" width="170.33333333333337" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1a-7K-VPj">
+                                                <rect key="frame" x="0.0" y="0.0" width="170.33333333333334" height="30"/>
+                                                <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Jft-t4-8gl"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Edit with Alamofire">
+                                                    <fontDescription key="titleFontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="editWithAlamofire" destination="nID-g9-yZe" eventType="touchUpInside" id="ywE-gx-0sB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xTb-2s-j6L" firstAttribute="leading" secondItem="n0W-st-hfd" secondAttribute="leading" constant="10" id="9lq-3n-Jxg"/>
+                                    <constraint firstAttribute="trailing" secondItem="xTb-2s-j6L" secondAttribute="trailing" constant="10" id="c7O-X6-Gen"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6aw-y0-o45"/>
+                        <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6aw-y0-o45" firstAttribute="trailing" secondItem="n0W-st-hfd" secondAttribute="trailing" constant="25" id="UQF-69-AuW"/>
+                            <constraint firstItem="n0W-st-hfd" firstAttribute="leading" secondItem="6aw-y0-o45" secondAttribute="leading" constant="25" id="sT5-Hd-PwL"/>
+                            <constraint firstItem="n0W-st-hfd" firstAttribute="top" secondItem="6aw-y0-o45" secondAttribute="top" constant="25" id="xb5-b9-vpz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Post" id="GCI-wQ-kM3"/>
+                    <connections>
+                        <outlet property="bodyTV" destination="5ez-E2-wms" id="Efo-6y-qbX"/>
+                        <outlet property="editBtn" destination="G1a-7K-VPj" id="1lT-s1-BhS"/>
+                        <outlet property="titleTF" destination="cb1-iZ-RFA" id="veF-aa-TZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPS-sU-QV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="465"/>
         </scene>
     </scenes>
 </document>

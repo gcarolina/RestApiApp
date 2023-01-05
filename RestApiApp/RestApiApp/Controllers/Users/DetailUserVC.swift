@@ -4,19 +4,20 @@
 
 import UIKit
 
-class DetailUserVC: UIViewController {
+final class DetailUserVC: UIViewController {
     
     var user: User?
     
-    @IBOutlet weak var albumsBtn: UIButton!
-    @IBOutlet weak var postBtn: UIButton!
-    @IBOutlet weak var toDoBtn: UIButton!
+    @IBOutlet private weak var albumsBtn: UIButton!
+    @IBOutlet private weak var postBtn: UIButton!
+    @IBOutlet private weak var toDoBtn: UIButton!
     
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var username: UILabel!
-    @IBOutlet weak var email: UILabel!
-    @IBOutlet weak var phone: UILabel!
-    @IBOutlet weak var website: UILabel!
+    @IBOutlet private weak var name: UILabel!
+    @IBOutlet private weak var username: UILabel!
+    @IBOutlet private weak var email: UILabel!
+    @IBOutlet private weak var phone: UILabel!
+    @IBOutlet private weak var website: UILabel!
+    @IBOutlet private weak var findOutAddress: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,7 @@ class DetailUserVC: UIViewController {
     
     @IBAction func albumsAction() {
         let storyboard = UIStoryboard(name: "AlbumsAndPhotos", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as! AlbumsTVC
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as? AlbumsTVC else { return }
         vc.user = user
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -61,5 +62,6 @@ class DetailUserVC: UIViewController {
         albumsBtn.layer.cornerRadius = albumsBtn.frame.size.height / 2
         postBtn.layer.cornerRadius = postBtn.frame.size.height / 2
         toDoBtn.layer.cornerRadius = toDoBtn.frame.size.height / 2
+        findOutAddress.layer.cornerRadius = findOutAddress.frame.size.height / 2
     }
 }

@@ -6,7 +6,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class AlbumsTVC: UITableViewController {
+final class AlbumsTVC: UITableViewController {
     var user: User?
     var albums: [JSON] = []
     
@@ -15,21 +15,11 @@ class AlbumsTVC: UITableViewController {
     }
 
     private func getData() {
-
         guard let userId = user?.id else { return }
-        
-        guard let url = URL(string: "\(ApiConstants.albumsPath)?userId=\(userId)") else { return }
-
-        AF.request(url).response { response in
-            
-            switch response.result {
-            case .success(let data):
-                guard let data = data else { return }
-                self.albums = JSON(data).arrayValue
-                self.tableView.reloadData()
-            case .failure(let error):
-                print(error)
-            }
+        NetworkService.getData(userID: userId) { [weak self] result, error in
+            guard let albums = result else { return }
+            self?.albums = albums
+            self?.tableView.reloadData()
         }
     }
     // MARK: - Table view data source
@@ -39,10 +29,25 @@ class AlbumsTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = (albums[indexPath.row]["id"].int ?? 0).description
         cell.detailTextLabel?.text = albums[indexPath.row]["title"].stringValue
         cell.detailTextLabel?.numberOfLines = 0
         return cell
+    }
+    
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let album = albums[indexPath.row]
+        performSegue(withIdentifier: "showPhotos", sender: album)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPhotos",
+           let photosCollectionVC = segue.destination as? PhotosCVC,
+           let album = sender as? JSON {
+            photosCollectionVC.user = user
+            photosCollectionVC.album = album
+        }
     }
 }

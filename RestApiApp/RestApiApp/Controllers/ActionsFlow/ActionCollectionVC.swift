@@ -4,7 +4,7 @@
 
 import UIKit
 
-class ActionCollectionVC: UICollectionViewCell {
+final class ActionCollectionVC: UICollectionViewCell {
     
     @IBOutlet weak var infoLbl: UILabel!
 }

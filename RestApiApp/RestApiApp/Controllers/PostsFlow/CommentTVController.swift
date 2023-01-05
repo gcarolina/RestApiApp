@@ -4,7 +4,7 @@
 
 import UIKit
 
-class CommentTVController: UITableViewController {
+final class CommentTVController: UITableViewController {
 
     var post: Post?
     var comments: [Comment] = []
@@ -39,7 +39,7 @@ class CommentTVController: UITableViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    func fetchComments() {
+    private func fetchComments() {
         guard let postId = post?.id else { return }
         let pathUrl = "\(ApiConstants.commentsPath)?postId=\(postId)"
         

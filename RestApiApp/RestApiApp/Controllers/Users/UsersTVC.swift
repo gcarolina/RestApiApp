@@ -4,7 +4,7 @@
 
 import UIKit
 
-class UsersTVC: UITableViewController {
+final class UsersTVC: UITableViewController {
     var users: [User] = []
 
     override func viewDidLoad() {
@@ -38,7 +38,6 @@ class UsersTVC: UITableViewController {
 
     private func fetchUsers() {
         guard let url = URL(string: "http://localhost:3000/users") else { return }
-        
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             
             if let error = error {

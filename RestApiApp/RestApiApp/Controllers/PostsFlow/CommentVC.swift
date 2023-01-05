@@ -4,10 +4,10 @@
 
 import UIKit
 
-class CommentVC: UIViewController {
+final class CommentVC: UIViewController {
 
-    @IBOutlet weak var bodyLabel: UILabel!
     var comment: Comment?
+    @IBOutlet private weak var bodyLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

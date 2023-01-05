@@ -5,11 +5,10 @@
 import UIKit
 import MapKit
 
-class MapVC: UIViewController {
+final class MapVC: UIViewController {
     var address: Address?
-    var users: [User] = []
-    @IBOutlet weak var addressLbl: UILabel!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet private weak var addressLbl: UILabel!
+    @IBOutlet private weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -6,19 +6,20 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class NewPostVC: UIViewController {
+final class NewPostVC: UIViewController {
 
     var user: User?
     
-    @IBOutlet weak var titleTF: UITextField!
-    @IBOutlet weak var bodyTV: UITextView!
-    @IBOutlet weak var postWithURL: UIButton!
-    @IBOutlet weak var postWithAlamofire: UIButton!
+    @IBOutlet private weak var titleTF: UITextField!
+    @IBOutlet private weak var bodyTV: UITextView!
+    @IBOutlet private weak var postWithURL: UIButton!
+    @IBOutlet private weak var postWithAlamofire: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
+    
     @IBAction func postURLSession() {
         if let userID = user?.id,
            let title = titleTF.text,

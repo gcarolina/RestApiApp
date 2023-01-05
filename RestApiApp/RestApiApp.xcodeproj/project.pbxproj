@@ -17,6 +17,12 @@
 		F119C4F4295B9806003CA3A8 /* ToDosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119C4F3295B9806003CA3A8 /* ToDosTVC.swift */; };
 		F119C4F6295B9819003CA3A8 /* AlbumsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119C4F5295B9819003CA3A8 /* AlbumsTVC.swift */; };
 		F119C4F8295B983D003CA3A8 /* AlbumsAndPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F119C4F7295B983D003CA3A8 /* AlbumsAndPhotos.storyboard */; };
+		F12D6B1D29659E73006039FF /* PhotosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D6B1C29659E73006039FF /* PhotosCVC.swift */; };
+		F12D6B252965A491006039FF /* PhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D6B232965A491006039FF /* PhotoCVCell.swift */; };
+		F12D6B262965A491006039FF /* PhotoCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12D6B242965A491006039FF /* PhotoCVCell.xib */; };
+		F12D6B282965E614006039FF /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D6B272965E614006039FF /* CacheManager.swift */; };
+		F12D6B2A2965E995006039FF /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D6B292965E995006039FF /* PhotoVC.swift */; };
+		F12D6B2C296609A9006039FF /* EditPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D6B2B296609A9006039FF /* EditPostVC.swift */; };
 		F1DAC1BC295C7E5E0039FC81 /* NewPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAC1BB295C7E5E0039FC81 /* NewPostVC.swift */; };
 		F1ECCB65295A41B200FB9DC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECCB64295A41B200FB9DC6 /* AppDelegate.swift */; };
 		F1ECCB67295A41B200FB9DC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECCB66295A41B200FB9DC6 /* SceneDelegate.swift */; };
@@ -49,6 +55,12 @@
 		F119C4F3295B9806003CA3A8 /* ToDosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosTVC.swift; sourceTree = "<group>"; };
 		F119C4F5295B9819003CA3A8 /* AlbumsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTVC.swift; sourceTree = "<group>"; };
 		F119C4F7295B983D003CA3A8 /* AlbumsAndPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumsAndPhotos.storyboard; sourceTree = "<group>"; };
+		F12D6B1C29659E73006039FF /* PhotosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCVC.swift; sourceTree = "<group>"; };
+		F12D6B232965A491006039FF /* PhotoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCVCell.swift; sourceTree = "<group>"; };
+		F12D6B242965A491006039FF /* PhotoCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCVCell.xib; sourceTree = "<group>"; };
+		F12D6B272965E614006039FF /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		F12D6B292965E995006039FF /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		F12D6B2B296609A9006039FF /* EditPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostVC.swift; sourceTree = "<group>"; };
 		F1DAC1BB295C7E5E0039FC81 /* NewPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostVC.swift; sourceTree = "<group>"; };
 		F1ECCB61295A41B200FB9DC6 /* RestApiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestApiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ECCB64295A41B200FB9DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F1042AE1295CDF1500169BAB /* NetworkService.swift */,
+				F12D6B272965E614006039FF /* CacheManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -119,6 +132,25 @@
 				F119C4F3295B9806003CA3A8 /* ToDosTVC.swift */,
 			);
 			path = ToDos;
+			sourceTree = "<group>";
+		};
+		F12D6B1B29659DCD006039FF /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				F12D6B1C29659E73006039FF /* PhotosCVC.swift */,
+				F12D6B292965E995006039FF /* PhotoVC.swift */,
+				F12D6B2229659E9A006039FF /* Cell */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		F12D6B2229659E9A006039FF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F12D6B232965A491006039FF /* PhotoCVCell.swift */,
+				F12D6B242965A491006039FF /* PhotoCVCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F1ECCB58295A41B200FB9DC6 = {
@@ -198,6 +230,7 @@
 				F1ECCB96295A498800FB9DC6 /* Users */,
 				F1ECCB99295A58D600FB9DC6 /* PostsFlow */,
 				F119C4F1295B97B8003CA3A8 /* Albums */,
+				F12D6B1B29659DCD006039FF /* Photos */,
 				F119C4F2295B97C4003CA3A8 /* ToDos */,
 			);
 			path = Controllers;
@@ -234,6 +267,7 @@
 				F1ECCB9E295AED1800FB9DC6 /* CommentTVController.swift */,
 				F1DAC1BB295C7E5E0039FC81 /* NewPostVC.swift */,
 				F1042AE3295CE5AB00169BAB /* CommentVC.swift */,
+				F12D6B2B296609A9006039FF /* EditPostVC.swift */,
 			);
 			path = PostsFlow;
 			sourceTree = "<group>";
@@ -309,6 +343,7 @@
 				F1ECCB9D295A5A1900FB9DC6 /* PostFlow.storyboard in Resources */,
 				F1ECCB71295A41B700FB9DC6 /* LaunchScreen.storyboard in Resources */,
 				F1ECCB6E295A41B700FB9DC6 /* Assets.xcassets in Resources */,
+				F12D6B262965A491006039FF /* PhotoCVCell.xib in Resources */,
 				F1ECCB6C295A41B200FB9DC6 /* Main.storyboard in Resources */,
 				F119C4F8295B983D003CA3A8 /* AlbumsAndPhotos.storyboard in Resources */,
 			);
@@ -331,10 +366,13 @@
 				F1ECCB65295A41B200FB9DC6 /* AppDelegate.swift in Sources */,
 				F1ECCB80295A433000FB9DC6 /* ActionsCVController.swift in Sources */,
 				F1DAC1BC295C7E5E0039FC81 /* NewPostVC.swift in Sources */,
+				F12D6B282965E614006039FF /* CacheManager.swift in Sources */,
 				F119C4EF295AF543003CA3A8 /* MapVC.swift in Sources */,
 				F1ECCB84295A455600FB9DC6 /* User.swift in Sources */,
 				F1ECCB67295A41B200FB9DC6 /* SceneDelegate.swift in Sources */,
+				F12D6B1D29659E73006039FF /* PhotosCVC.swift in Sources */,
 				F119C4F4295B9806003CA3A8 /* ToDosTVC.swift in Sources */,
+				F12D6B252965A491006039FF /* PhotoCVCell.swift in Sources */,
 				F1ECCB9F295AED1800FB9DC6 /* CommentTVController.swift in Sources */,
 				F1042AD3295CCC9500169BAB /* Requests.swift in Sources */,
 				F1ECCB86295A456400FB9DC6 /* Address.swift in Sources */,
@@ -345,6 +383,8 @@
 				F1ECCB95295A486C00FB9DC6 /* UsersTVC.swift in Sources */,
 				F1ECCB8C295A458900FB9DC6 /* Post.swift in Sources */,
 				F1ECCB9B295A590F00FB9DC6 /* PostsTVC.swift in Sources */,
+				F12D6B2A2965E995006039FF /* PhotoVC.swift in Sources */,
+				F12D6B2C296609A9006039FF /* EditPostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

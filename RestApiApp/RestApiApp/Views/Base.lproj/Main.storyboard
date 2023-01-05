@@ -63,8 +63,18 @@
                                         <constraint firstItem="pls-38-0Vd" firstAttribute="centerY" secondItem="WJK-0b-H1M" secondAttribute="centerY" id="d5J-sz-kzb"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pls-38-0Vd" secondAttribute="trailing" constant="25" id="peH-EG-Lbp"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="333" height="166"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="infoLbl" destination="pls-38-0Vd" id="FGI-dS-NZ5"/>
                                 </connections>
@@ -186,7 +196,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="800"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-pm-KA9">
-                                                <rect key="frame" x="15" y="40" width="331" height="597.66666666666663"/>
+                                                <rect key="frame" x="15" y="50" width="331" height="597.66666666666663"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-qa-IGP">
                                                         <rect key="frame" x="0.0" y="0.0" width="331" height="191.66666666666666"/>
@@ -196,7 +206,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxS-GJ-uQn">
                                                                         <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
                                                                         <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -216,7 +226,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amd-cc-P8S">
                                                                         <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
                                                                         <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -236,7 +246,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkq-9j-LUb">
                                                                         <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
                                                                         <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -256,7 +266,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-44-E6Z">
                                                                         <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
                                                                         <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -276,7 +286,7 @@
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDK-uD-HJ6">
                                                                         <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
                                                                         <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -293,9 +303,10 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-td-P7E">
+                                                    <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-td-P7E">
                                                         <rect key="frame" x="58.666666666666671" y="291.66666666666669" width="213.66666666666663" height="39"/>
-                                                        <color key="tintColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Find out the address">
                                                             <fontDescription key="titleFontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="19"/>
@@ -354,7 +365,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="ddL-pm-KA9" firstAttribute="top" secondItem="gwc-D6-Ir1" secondAttribute="top" constant="40" id="GYt-6U-3kN"/>
+                                            <constraint firstItem="ddL-pm-KA9" firstAttribute="top" secondItem="gwc-D6-Ir1" secondAttribute="top" constant="50" id="GYt-6U-3kN"/>
                                             <constraint firstAttribute="height" constant="800" id="RuD-fC-P9M"/>
                                             <constraint firstAttribute="trailing" secondItem="ddL-pm-KA9" secondAttribute="trailing" constant="15" id="U5x-MO-xaS"/>
                                             <constraint firstItem="ddL-pm-KA9" firstAttribute="leading" secondItem="gwc-D6-Ir1" secondAttribute="leading" constant="15" id="u3z-xv-pz0"/>
@@ -384,6 +395,7 @@
                     <connections>
                         <outlet property="albumsBtn" destination="vfo-H8-71W" id="Z5e-rz-Wbf"/>
                         <outlet property="email" destination="oQh-Bq-FIC" id="aHr-Sc-F2p"/>
+                        <outlet property="findOutAddress" destination="Nu7-td-P7E" id="QlD-ZH-zrJ"/>
                         <outlet property="name" destination="4H0-gR-x3Y" id="3sD-X2-nBN"/>
                         <outlet property="phone" destination="nNe-50-uNP" id="eZ8-cd-mFo"/>
                         <outlet property="postBtn" destination="Rcf-cP-n2r" id="mGD-CN-n7o"/>

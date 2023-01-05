@@ -4,10 +4,10 @@
 
 import UIKit
 
-class ImageVC: UIViewController {
+final class ImageVC: UIViewController {
 
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var imageView: UIImageView!
     
     private let imageURLstr = "https://mobimg.b-cdn.net/v3/fetch/4c/4c3361784e34e32404cbc5d1e183f5bb.jpeg"
     override func viewDidLoad() {

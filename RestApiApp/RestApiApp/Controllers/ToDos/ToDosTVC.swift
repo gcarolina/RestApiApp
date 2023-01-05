@@ -16,9 +16,7 @@ class ToDosTVC: UITableViewController {
     }
     
     private func getData() {
-        
         guard let userId = userId else { return }
-        
         guard let url = URL(string: "\(ApiConstants.todosPath)?userId=\(userId)") else { return }
         
         AF.request(url).response { response in
@@ -40,7 +38,7 @@ class ToDosTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = (todos[indexPath.row]["id"].int ?? 0).description
         cell.detailTextLabel?.text = todos[indexPath.row]["title"].stringValue
         cell.detailTextLabel?.numberOfLines = 0
