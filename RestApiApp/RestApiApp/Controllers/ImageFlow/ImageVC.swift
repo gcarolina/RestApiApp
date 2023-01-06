@@ -8,8 +8,8 @@ final class ImageVC: UIViewController {
 
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var imageView: UIImageView!
-    
-    private let imageURLstr = "https://mobimg.b-cdn.net/v3/fetch/4c/4c3361784e34e32404cbc5d1e183f5bb.jpeg"
+
+    private let imageURLstr = "https://oir.mobi/uploads/posts/2021-06/1623173586_54-oir_mobi-p-prirodnii-mir-priroda-krasivo-foto-58.jpg"
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchImage()
