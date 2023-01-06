@@ -32,7 +32,6 @@ final class UsersTVC: UITableViewController {
     }
 
     // MARK: - Table view delegate
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = users[indexPath.row]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -10,7 +10,6 @@ import SwiftyJSON
 final class EditPostVC: UIViewController {
     var post: Post?
     var user: User?
-    var id: Int?
     
     @IBOutlet private weak var titleTF: UITextField!
     @IBOutlet private weak var bodyTV: UITextView!
@@ -22,21 +21,23 @@ final class EditPostVC: UIViewController {
     }
     
     @IBAction func editWithAlamofire() {
+        let urlPost = ApiConstants.postsPath
         if let userID = user?.id,
            let postID = post?.id,
            let title = titleTF.text,
-           let text = bodyTV.text,
-           let url = ApiConstants.postsPathURL
+           let text = bodyTV.text
         {
+            let url = urlPost + "/" + "\(postID)"
+            guard let postsPathURL = URL(string: url) else { return }
+            
             let parameters: Parameters = ["userId": userID,
                                           "id": postID,
                                           "title": title,
                                           "body": text]
-            AF.request(url, method: .put, parameters: parameters).response { response in
+            Alamofire.AF.request(postsPathURL, method: .put, parameters: parameters).response { response in
                 
                 switch response.result {
                 case .success(let data):
-                    print(data)
                     print(JSON(data))
                     self.navigationController?.popViewController(animated: true)
                 case .failure(let error):
@@ -45,7 +46,6 @@ final class EditPostVC: UIViewController {
             }
         }
     }
-    
     
     private func setupUI() {
         titleTF.text = post?.title

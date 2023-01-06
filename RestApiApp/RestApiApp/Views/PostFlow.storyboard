@@ -128,7 +128,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="l8b-Q1-Pjb"/>
                                                 </constraints>
-                                                <color key="tintColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.18039215689999999" green="0.027450980390000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Post with Alamofire">
                                                     <fontDescription key="titleFontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>

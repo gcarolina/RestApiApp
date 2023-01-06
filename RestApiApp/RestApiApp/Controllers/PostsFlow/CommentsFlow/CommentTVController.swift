@@ -9,16 +9,11 @@ final class CommentTVController: UITableViewController {
     var post: Post?
     var comments: [Comment] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         fetchComments()
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         comments.count
     }
@@ -30,7 +25,7 @@ final class CommentTVController: UITableViewController {
         cell.detailTextLabel?.text = comment.body
         return cell
     }
-        
+    // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let comment = comments[indexPath.row]
         let storyboard = UIStoryboard(name: "PostFlow", bundle: nil)

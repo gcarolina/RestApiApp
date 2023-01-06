@@ -5,25 +5,25 @@
 import UIKit
 import MapKit
 
-final class MapVC: UIViewController {
-    var address: Address?
-    var pin: MapMarker!
+final class MapVC: UIViewController, MKMapViewDelegate {
+//    var address: Address?
+    var user: User?
     
     @IBOutlet private weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let city = address?.city, let street = address?.street else { return }
+        guard let city = user?.address?.city, let street = user?.address?.street else { return }
         self.navigationItem.title = "\(street), \(city)"
         
-        guard let lat = Double(address?.geo?.lat ?? ""), let lng = Double(address?.geo?.lng ?? "") else { return }
+        guard let lat = Double(user?.address?.geo?.lat ?? ""), let lng = Double(user?.address?.geo?.lng ?? "") else { return }
         let initialLocation = CLLocation(latitude: lat, longitude: lng)
         mapView.centerToLocation(initialLocation)
         
         let location = CLLocationCoordinate2D(latitude: lat, longitude: lng)
-        pin = MapMarker(title: "\(address?.street ?? "")", subtitle: "\(address?.city ?? "")", coordinate: location)
+        let pin = MapMarker(coordinate: location, title: "\(user?.company?.name ?? "")", subtitle: "\(user?.address?.street ?? "")")
         mapView.addAnnotation(pin)
-        
+        self.mapView.delegate = self
     }
 }
 

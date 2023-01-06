@@ -155,6 +155,15 @@
 			path = MapFlow;
 			sourceTree = "<group>";
 		};
+		F12BD60E2968C59C00AA445E /* CommentsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F1ECCB9E295AED1800FB9DC6 /* CommentTVController.swift */,
+				F1042AE3295CE5AB00169BAB /* CommentVC.swift */,
+			);
+			path = CommentsFlow;
+			sourceTree = "<group>";
+		};
 		F12D6B1B29659DCD006039FF /* Photos */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,10 +295,9 @@
 			isa = PBXGroup;
 			children = (
 				F1ECCB9A295A590F00FB9DC6 /* PostsTVC.swift */,
-				F1ECCB9E295AED1800FB9DC6 /* CommentTVController.swift */,
 				F1DAC1BB295C7E5E0039FC81 /* NewPostVC.swift */,
-				F1042AE3295CE5AB00169BAB /* CommentVC.swift */,
 				F12D6B2B296609A9006039FF /* EditPostVC.swift */,
+				F12BD60E2968C59C00AA445E /* CommentsFlow */,
 			);
 			path = PostsFlow;
 			sourceTree = "<group>";

@@ -27,7 +27,8 @@ final class DetailUserVC: UIViewController {
     @IBAction func addressAction() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "MapVC") as? MapVC else { return }
-        vc.address = user?.address
+        //vc.address = user?.address
+        vc.user = user
         navigationController?.pushViewController(vc, animated: true)
     }
     
