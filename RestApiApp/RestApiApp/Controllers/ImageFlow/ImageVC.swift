@@ -33,8 +33,6 @@ final class ImageVC: UIViewController {
                     print(response)
                 }
                 
-                print("\n", data ?? "", "\n")
-                
                 if let data,
                    let image = UIImage(data: data) {
                     self.imageView.image = image

@@ -34,7 +34,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="PjX-rK-LJm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74119462560000005" green="0.69435179010000003" blue="0.82664543690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z2c-kh-wUq">
                             <size key="itemSize" width="333" height="166"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -50,13 +50,13 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pls-38-0Vd">
-                                            <rect key="frame" x="141" y="70" width="51.333333333333343" height="26.333333333333329"/>
-                                            <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
-                                            <color key="textColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <rect key="frame" x="140.33333333333334" y="71" width="52.333333333333343" height="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                            <color key="textColor" red="0.74119462560000005" green="0.69435179010000003" blue="0.82664543690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="pls-38-0Vd" firstAttribute="centerX" secondItem="WJK-0b-H1M" secondAttribute="centerX" id="Vqs-Cy-7K6"/>
                                         <constraint firstItem="pls-38-0Vd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WJK-0b-H1M" secondAttribute="leading" constant="25" id="Xfo-ZS-3TL"/>
@@ -95,7 +95,7 @@
             </objects>
             <point key="canvasLocation" x="1004" y="12"/>
         </scene>
-        <!--ImageVC-->
+        <!--Image-->
         <scene sceneID="Yvk-nA-ZxY">
             <objects>
                 <viewController id="I9f-5a-j9t" customClass="ImageVC" customModule="RestApiApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,25 +103,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="94z-se-dFY">
-                                <rect key="frame" x="15" y="118" width="363" height="685"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="94z-se-dFY">
+                                <rect key="frame" x="25" y="-39.666666666666686" width="343" height="1000.3333333333335"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YGK-HG-Jtf">
                                 <rect key="frame" x="178" y="442" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dgQ-uE-icg"/>
-                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74119462560000005" green="0.69435179010000003" blue="0.82664543690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dgQ-uE-icg" firstAttribute="bottom" secondItem="94z-se-dFY" secondAttribute="bottom" constant="15" id="Bcu-mp-GF3"/>
-                            <constraint firstItem="dgQ-uE-icg" firstAttribute="trailing" secondItem="94z-se-dFY" secondAttribute="trailing" constant="15" id="Rqq-Th-B1D"/>
+                            <constraint firstItem="94z-se-dFY" firstAttribute="centerX" secondItem="dgQ-uE-icg" secondAttribute="centerX" id="Oa3-5C-Au3"/>
+                            <constraint firstItem="dgQ-uE-icg" firstAttribute="trailing" secondItem="94z-se-dFY" secondAttribute="trailing" constant="25" id="Rqq-Th-B1D"/>
                             <constraint firstItem="YGK-HG-Jtf" firstAttribute="centerY" secondItem="94z-se-dFY" secondAttribute="centerY" id="S4D-Vj-ukH"/>
                             <constraint firstItem="YGK-HG-Jtf" firstAttribute="centerX" secondItem="94z-se-dFY" secondAttribute="centerX" id="ZeC-ir-PLr"/>
-                            <constraint firstItem="94z-se-dFY" firstAttribute="leading" secondItem="dgQ-uE-icg" secondAttribute="leading" constant="15" id="eG3-7O-uFT"/>
-                            <constraint firstItem="94z-se-dFY" firstAttribute="top" secondItem="dgQ-uE-icg" secondAttribute="top" constant="15" id="m0h-Qx-fyt"/>
+                            <constraint firstItem="94z-se-dFY" firstAttribute="leading" secondItem="dgQ-uE-icg" secondAttribute="leading" constant="25" id="eG3-7O-uFT"/>
+                            <constraint firstItem="94z-se-dFY" firstAttribute="centerY" secondItem="dgQ-uE-icg" secondAttribute="centerY" id="gJ3-vs-iKn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DgM-Wp-KBK"/>
+                    <navigationItem key="navigationItem" title="Image" id="DgM-Wp-KBK"/>
                     <connections>
                         <outlet property="activityIndicator" destination="YGK-HG-Jtf" id="kZA-jI-M6H"/>
                         <outlet property="imageView" destination="94z-se-dFY" id="PP7-mM-VHU"/>
@@ -131,43 +131,47 @@
             </objects>
             <point key="canvasLocation" x="1847" y="-262"/>
         </scene>
-        <!--UsersTVC-->
+        <!--Users-->
         <scene sceneID="9rw-x8-Pmi">
             <objects>
                 <tableViewController id="P9Q-ER-9L4" customClass="UsersTVC" customModule="RestApiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="PB9-vo-4ff">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74119462560000005" green="0.69435179010000003" blue="0.82664543690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.15842973199999999" green="0.060658045700000003" blue="0.33123178190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.74119462560000005" green="0.69435179010000003" blue="0.82664543690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="LfF-0K-FQA" detailTextLabel="6a0-oI-WGE" style="IBUITableViewCellStyleSubtitle" id="ouF-58-R5J">
-                                <rect key="frame" x="0.0" y="50" width="393" height="75.666664123535156"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="LfF-0K-FQA" detailTextLabel="6a0-oI-WGE" imageView="eye-i1-bpF" rowHeight="67" style="IBUITableViewCellStyleSubtitle" id="ouF-58-R5J">
+                                <rect key="frame" x="0.0" y="50" width="393" height="67"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ouF-58-R5J" id="gaU-vQ-181">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="75.666664123535156"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="67"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LfF-0K-FQA">
-                                            <rect key="frame" x="20.000000000000004" y="10.666666666666664" width="41.333333333333336" height="25"/>
+                                            <rect key="frame" x="102" y="6.6666666666666643" width="41.333333333333336" height="25"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="19"/>
-                                            <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6a0-oI-WGE">
-                                            <rect key="frame" x="20" y="39" width="67.333333333333329" height="23.666666666666668"/>
+                                            <rect key="frame" x="102" y="35" width="67.333333333333329" height="23.666666666666668"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
-                                            <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.15842973199999999" green="0.060658045700000003" blue="0.33123178190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="personDefault" id="eye-i1-bpF">
+                                            <rect key="frame" x="20" y="0.0" width="67" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.74119462560000005" green="0.69435179010000003" blue="0.82664543690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.15842973199999999" green="0.060658045700000003" blue="0.33123178190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -175,7 +179,7 @@
                             <outlet property="delegate" destination="P9Q-ER-9L4" id="XMR-R5-Hox"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="tmF-4c-CTs"/>
+                    <navigationItem key="navigationItem" title="Users" id="tmF-4c-CTs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Plq-RN-oXm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,133 +199,135 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwc-D6-Ir1">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="800"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-pm-KA9">
-                                                <rect key="frame" x="15" y="50" width="331" height="597.66666666666663"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-pm-KA9">
+                                                <rect key="frame" x="15" y="15" width="331" height="678"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-qa-IGP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="191.66666666666666"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personDefault" translatesAutoresizingMaskIntoConstraints="NO" id="a3F-WF-gvn">
+                                                        <rect key="frame" x="69" y="0.0" width="193" height="193"/>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="r1e-qa-IGP">
+                                                        <rect key="frame" x="0.0" y="233" width="331" height="167.66666666666663"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-8F-Ynq">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-8F-Ynq">
                                                                 <rect key="frame" x="0.0" y="0.0" width="331" height="22.333333333333332"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxS-GJ-uQn">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxS-GJ-uQn">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.18347190768851052" green="0.14844048329280798" blue="0.28797049474234537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-gR-x3Y">
-                                                                        <rect key="frame" x="190.66666666666663" y="0.0" width="140.33333333333337" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <rect key="frame" x="123.66666666666664" y="0.0" width="207.33333333333337" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.18039215689999999" green="0.027450980390000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="kxS-GJ-uQn" firstAttribute="width" secondItem="4H0-gR-x3Y" secondAttribute="width" id="Vhe-LF-7b6"/>
+                                                                    <constraint firstItem="kxS-GJ-uQn" firstAttribute="width" secondItem="4H0-gR-x3Y" secondAttribute="width" multiplier="1:2" id="Vhe-LF-7b6"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="pth-ML-ytV">
-                                                                <rect key="frame" x="0.0" y="42.333333333333343" width="331" height="22.333333333333329"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pth-ML-ytV">
+                                                                <rect key="frame" x="0.0" y="36.333333333333314" width="331" height="22.333333333333329"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amd-cc-P8S">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amd-cc-P8S">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RW-pg-ncE">
-                                                                        <rect key="frame" x="190.66666666666663" y="0.0" width="140.33333333333337" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <rect key="frame" x="123.66666666666664" y="0.0" width="207.33333333333337" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.180071178" green="0.025815453240000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="amd-cc-P8S" firstAttribute="width" secondItem="4RW-pg-ncE" secondAttribute="width" id="R3o-1T-mdv"/>
+                                                                    <constraint firstItem="amd-cc-P8S" firstAttribute="width" secondItem="4RW-pg-ncE" secondAttribute="width" multiplier="1:2" id="R3o-1T-mdv"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lQQ-FH-Vjg">
-                                                                <rect key="frame" x="0.0" y="84.666666666666657" width="331" height="22.333333333333329"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lQQ-FH-Vjg">
+                                                                <rect key="frame" x="0.0" y="72.666666666666686" width="331" height="22.333333333333329"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkq-9j-LUb">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkq-9j-LUb">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQh-Bq-FIC">
-                                                                        <rect key="frame" x="190.66666666666663" y="0.0" width="140.33333333333337" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <rect key="frame" x="123.66666666666664" y="0.0" width="207.33333333333337" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.180071178" green="0.025815453240000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="Hkq-9j-LUb" firstAttribute="width" secondItem="oQh-Bq-FIC" secondAttribute="width" multiplier="1.00272" id="h47-xK-9n5"/>
+                                                                    <constraint firstItem="Hkq-9j-LUb" firstAttribute="width" secondItem="oQh-Bq-FIC" secondAttribute="width" multiplier="1:2" id="h47-xK-9n5"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="EPg-gx-ITR">
-                                                                <rect key="frame" x="0.0" y="126.99999999999999" width="331" height="22.333333333333329"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EPg-gx-ITR">
+                                                                <rect key="frame" x="0.0" y="109" width="331" height="22.333333333333343"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-44-E6Z">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-44-E6Z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-50-uNP">
-                                                                        <rect key="frame" x="190.66666666666663" y="0.0" width="140.33333333333337" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <rect key="frame" x="123.66666666666664" y="0.0" width="207.33333333333337" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.180071178" green="0.025815453240000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="Qdh-44-E6Z" firstAttribute="width" secondItem="nNe-50-uNP" secondAttribute="width" multiplier="1.00238" id="Wfl-OO-YkM"/>
+                                                                    <constraint firstItem="Qdh-44-E6Z" firstAttribute="width" secondItem="nNe-50-uNP" secondAttribute="width" multiplier="1:2" id="23Q-8k-5Lr"/>
                                                                 </constraints>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Q2x-Yf-P1W">
-                                                                <rect key="frame" x="0.0" y="169.33333333333331" width="331" height="22.333333333333343"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q2x-Yf-P1W">
+                                                                <rect key="frame" x="0.0" y="145.33333333333331" width="331" height="22.333333333333343"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDK-uD-HJ6">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="140.66666666666666" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDK-uD-HJ6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNI-IY-Mcq">
-                                                                        <rect key="frame" x="190.66666666666663" y="0.0" width="140.33333333333337" height="22.333333333333332"/>
-                                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
-                                                                        <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <rect key="frame" x="123.66666666666664" y="0.0" width="207.33333333333337" height="22.333333333333332"/>
+                                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                                        <color key="textColor" red="0.180071178" green="0.025815453240000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="dDK-uD-HJ6" firstAttribute="width" secondItem="gNI-IY-Mcq" secondAttribute="width" multiplier="1.00211" id="hIO-oZ-y5g"/>
+                                                                    <constraint firstItem="dDK-uD-HJ6" firstAttribute="width" secondItem="gNI-IY-Mcq" secondAttribute="width" multiplier="1:2" id="hIO-oZ-y5g"/>
                                                                 </constraints>
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-td-P7E">
-                                                        <rect key="frame" x="58.666666666666671" y="291.66666666666669" width="213.66666666666663" height="39"/>
-                                                        <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-td-P7E">
+                                                        <rect key="frame" x="9" y="440.66666666666663" width="313.33333333333331" height="36.333333333333314"/>
+                                                        <color key="tintColor" red="0.1803921568627451" green="0.027450980392156862" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Find out the address">
-                                                            <fontDescription key="titleFontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="19"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Click here to see Company address">
+                                                            <fontDescription key="titleFontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="addressAction" destination="KVn-1w-eOD" eventType="touchUpInside" id="uce-AQ-72o"/>
                                                         </connections>
                                                     </button>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="pO2-c7-04Y">
-                                                        <rect key="frame" x="119.66666666666666" y="430.66666666666663" width="91.666666666666657" height="167"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="pO2-c7-04Y">
+                                                        <rect key="frame" x="1" y="517" width="329" height="161"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcf-cP-n2r">
-                                                                <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="39"/>
-                                                                <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="tintColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="329" height="39"/>
+                                                                <color key="backgroundColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" red="0.84225416919999996" green="0.80420060839999996" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Posts">
                                                                     <fontDescription key="titleFontDescription" name="Thonburi" family="Thonburi" pointSize="19"/>
@@ -331,9 +337,9 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfo-H8-71W">
-                                                                <rect key="frame" x="0.0" y="64" width="91.666666666666671" height="39"/>
-                                                                <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="tintColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <rect key="frame" x="0.0" y="61" width="329" height="39"/>
+                                                                <color key="backgroundColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" red="0.84225416919999996" green="0.80420060839999996" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Albums">
                                                                     <fontDescription key="titleFontDescription" name="Thonburi" family="Thonburi" pointSize="19"/>
@@ -343,9 +349,9 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxg-Gf-1a0">
-                                                                <rect key="frame" x="0.0" y="128" width="91.666666666666671" height="39"/>
-                                                                <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="tintColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <rect key="frame" x="0.0" y="122" width="329" height="39"/>
+                                                                <color key="backgroundColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" red="0.84225416919999996" green="0.80420060839999996" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="ToDo-s">
                                                                     <fontDescription key="titleFontDescription" name="Thonburi" family="Thonburi" pointSize="19"/>
@@ -359,13 +365,35 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="r1e-qa-IGP" firstAttribute="leading" secondItem="ddL-pm-KA9" secondAttribute="leading" id="DEq-fR-SNv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pO2-c7-04Y" secondAttribute="trailing" constant="1" id="i9o-sF-K6x"/>
+                                                    <constraint firstItem="pO2-c7-04Y" firstAttribute="leading" secondItem="ddL-pm-KA9" secondAttribute="leading" constant="1" id="poo-nf-HWg"/>
                                                     <constraint firstAttribute="trailing" secondItem="r1e-qa-IGP" secondAttribute="trailing" id="yEY-ki-qqS"/>
                                                 </constraints>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-fH-VNu">
+                                                <rect key="frame" x="25" y="35" width="50" height="22.333333333333332"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL3-rr-7jo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="22.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                        <color key="textColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3a-LD-kjG">
+                                                        <rect key="frame" x="50" y="0.0" width="0.0" height="22.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
+                                                        <color key="textColor" red="0.180071178" green="0.025815453240000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="tL3-rr-7jo" firstAttribute="width" secondItem="C3a-LD-kjG" secondAttribute="width" multiplier="1.00211" id="3cw-JD-UTV"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.74119462560000005" green="0.69435179010000003" blue="0.82664543690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="ddL-pm-KA9" firstAttribute="top" secondItem="gwc-D6-Ir1" secondAttribute="top" constant="50" id="GYt-6U-3kN"/>
+                                            <constraint firstItem="ddL-pm-KA9" firstAttribute="top" secondItem="gwc-D6-Ir1" secondAttribute="top" constant="15" id="6gb-Oi-JvX"/>
                                             <constraint firstAttribute="height" constant="800" id="RuD-fC-P9M"/>
                                             <constraint firstAttribute="trailing" secondItem="ddL-pm-KA9" secondAttribute="trailing" constant="15" id="U5x-MO-xaS"/>
                                             <constraint firstItem="ddL-pm-KA9" firstAttribute="leading" secondItem="gwc-D6-Ir1" secondAttribute="leading" constant="15" id="u3z-xv-pz0"/>
@@ -384,7 +412,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qbC-fv-Jr9"/>
-                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74117647058823533" green="0.69411764705882351" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dEE-Gn-E98" firstAttribute="top" secondItem="IRo-wh-gP5" secondAttribute="topMargin" id="EHi-RI-6W0"/>
                             <constraint firstItem="dEE-Gn-E98" firstAttribute="leading" secondItem="IRo-wh-gP5" secondAttribute="leadingMargin" id="JbX-Zl-xjL"/>
@@ -417,36 +445,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzj-YT-kYv">
-                                <rect key="frame" x="16" y="101.33333333333331" width="361" height="716.66666666666674"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lra-PH-wcd">
-                                <rect key="frame" x="25" y="69" width="343" height="22.333333333333329"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
-                                <color key="textColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CNq-s9-9DG"/>
-                        <color key="backgroundColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.84225416919999996" green="0.80420060839999996" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Lra-PH-wcd" firstAttribute="top" secondItem="JjG-0a-Dul" secondAttribute="topMargin" constant="10" id="1lu-Na-NfW"/>
-                            <constraint firstItem="gzj-YT-kYv" firstAttribute="top" secondItem="Lra-PH-wcd" secondAttribute="bottom" constant="10" id="Ci3-nJ-YMM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gzj-YT-kYv" secondAttribute="trailing" id="Esy-Ye-SyU"/>
-                            <constraint firstItem="Lra-PH-wcd" firstAttribute="leading" secondItem="CNq-s9-9DG" secondAttribute="leading" constant="25" id="ghO-Zz-80y"/>
-                            <constraint firstItem="gzj-YT-kYv" firstAttribute="leading" secondItem="JjG-0a-Dul" secondAttribute="leadingMargin" id="ixM-6F-d0k"/>
-                            <constraint firstItem="CNq-s9-9DG" firstAttribute="trailing" secondItem="Lra-PH-wcd" secondAttribute="trailing" constant="25" id="nfJ-tX-K80"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="gzj-YT-kYv" secondAttribute="bottom" id="vaG-qj-vqm"/>
+                            <constraint firstAttribute="bottom" secondItem="gzj-YT-kYv" secondAttribute="bottom" id="H57-Aj-E6q"/>
+                            <constraint firstItem="CNq-s9-9DG" firstAttribute="trailing" secondItem="gzj-YT-kYv" secondAttribute="trailing" id="Kll-bt-sWw"/>
+                            <constraint firstItem="gzj-YT-kYv" firstAttribute="top" secondItem="JjG-0a-Dul" secondAttribute="top" id="MwE-V8-d5q"/>
+                            <constraint firstItem="gzj-YT-kYv" firstAttribute="leading" secondItem="CNq-s9-9DG" secondAttribute="leading" id="ciN-4s-aDT"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addressLbl" destination="Lra-PH-wcd" id="3N1-qV-fi6"/>
                         <outlet property="mapView" destination="gzj-YT-kYv" id="0HW-ug-MQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cda-HR-jRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3566" y="213"/>
+            <point key="canvasLocation" x="3565.6488549618321" y="212.67605633802819"/>
         </scene>
         <!--ToDos-->
         <scene sceneID="nU9-LM-K4N">
@@ -455,10 +473,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CG6-dV-Bjw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="separatorColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74117647060000003" green="0.69411764710000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.18039215689999999" green="0.027450980390000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.74117647060000003" green="0.69411764710000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="1r0-ja-K3k" detailTextLabel="qdT-If-LdY" style="IBUITableViewCellStyleSubtitle" id="s3j-Ho-Mq8">
@@ -472,19 +490,19 @@
                                             <rect key="frame" x="20.000000000000004" y="10.666666666666664" width="41.333333333333336" height="25"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="19"/>
-                                            <color key="textColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.18347190769999999" green="0.14844048330000001" blue="0.28797049470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qdT-If-LdY">
                                             <rect key="frame" x="20" y="39" width="67.333333333333329" height="23.666666666666668"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
-                                            <color key="textColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.18039215689999999" green="0.027450980390000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.40798734409999998" green="0.1116958277" blue="0.14751438419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.69411764710000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.89000000000000001" green="0.73752957900000005" blue="0.67981001910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
@@ -501,6 +519,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="defaultImage" width="640" height="480"/>
+        <image name="default" width="1000" height="1000"/>
+        <image name="personDefault" width="193" height="193"/>
     </resources>
 </document>

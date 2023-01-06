@@ -15,7 +15,6 @@ final class ActionsCVController: UICollectionViewController {
     private let userActions = UserActions.allCases
     
     // MARK: UICollectionViewDataSource
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         userActions.count
     }

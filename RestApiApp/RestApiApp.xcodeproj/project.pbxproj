@@ -17,6 +17,8 @@
 		F119C4F4295B9806003CA3A8 /* ToDosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119C4F3295B9806003CA3A8 /* ToDosTVC.swift */; };
 		F119C4F6295B9819003CA3A8 /* AlbumsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119C4F5295B9819003CA3A8 /* AlbumsTVC.swift */; };
 		F119C4F8295B983D003CA3A8 /* AlbumsAndPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F119C4F7295B983D003CA3A8 /* AlbumsAndPhotos.storyboard */; };
+		F12BD6082968453E00AA445E /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BD6072968453E00AA445E /* UIColorExt.swift */; };
+		F12BD60C296865D000AA445E /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BD60B296865D000AA445E /* MapMarker.swift */; };
 		F12D6B1D29659E73006039FF /* PhotosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D6B1C29659E73006039FF /* PhotosCVC.swift */; };
 		F12D6B252965A491006039FF /* PhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D6B232965A491006039FF /* PhotoCVCell.swift */; };
 		F12D6B262965A491006039FF /* PhotoCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12D6B242965A491006039FF /* PhotoCVCell.xib */; };
@@ -55,6 +57,8 @@
 		F119C4F3295B9806003CA3A8 /* ToDosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosTVC.swift; sourceTree = "<group>"; };
 		F119C4F5295B9819003CA3A8 /* AlbumsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTVC.swift; sourceTree = "<group>"; };
 		F119C4F7295B983D003CA3A8 /* AlbumsAndPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumsAndPhotos.storyboard; sourceTree = "<group>"; };
+		F12BD6072968453E00AA445E /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		F12BD60B296865D000AA445E /* MapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
 		F12D6B1C29659E73006039FF /* PhotosCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCVC.swift; sourceTree = "<group>"; };
 		F12D6B232965A491006039FF /* PhotoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCVCell.swift; sourceTree = "<group>"; };
 		F12D6B242965A491006039FF /* PhotoCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCVCell.xib; sourceTree = "<group>"; };
@@ -134,6 +138,23 @@
 			path = ToDos;
 			sourceTree = "<group>";
 		};
+		F12BD6062968452600AA445E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F12BD6072968453E00AA445E /* UIColorExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F12BD60D296865D800AA445E /* MapFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F119C4EE295AF543003CA3A8 /* MapVC.swift */,
+				F12BD60B296865D000AA445E /* MapMarker.swift */,
+			);
+			path = MapFlow;
+			sourceTree = "<group>";
+		};
 		F12D6B1B29659DCD006039FF /* Photos */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +193,7 @@
 		F1ECCB63295A41B200FB9DC6 /* RestApiApp */ = {
 			isa = PBXGroup;
 			children = (
+				F12BD6062968452600AA445E /* Extensions */,
 				F1042AE0295CDF0500169BAB /* Services */,
 				F1ECCB79295A420200FB9DC6 /* Models */,
 				F1ECCB7B295A421900FB9DC6 /* Views */,
@@ -255,7 +277,7 @@
 			children = (
 				F1ECCB94295A486C00FB9DC6 /* UsersTVC.swift */,
 				F1ECCB97295A4FFB00FB9DC6 /* DetailUserVC.swift */,
-				F119C4EE295AF543003CA3A8 /* MapVC.swift */,
+				F12BD60D296865D800AA445E /* MapFlow */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -361,6 +383,7 @@
 				F1042AE2295CDF1500169BAB /* NetworkService.swift in Sources */,
 				F1ECCB82295A435200FB9DC6 /* ActionCollectionVC.swift in Sources */,
 				F1ECCB98295A4FFB00FB9DC6 /* DetailUserVC.swift in Sources */,
+				F12BD60C296865D000AA445E /* MapMarker.swift in Sources */,
 				F1ECCB7E295A430400FB9DC6 /* ImageVC.swift in Sources */,
 				F1042AE4295CE5AB00169BAB /* CommentVC.swift in Sources */,
 				F1ECCB65295A41B200FB9DC6 /* AppDelegate.swift in Sources */,
@@ -369,6 +392,7 @@
 				F12D6B282965E614006039FF /* CacheManager.swift in Sources */,
 				F119C4EF295AF543003CA3A8 /* MapVC.swift in Sources */,
 				F1ECCB84295A455600FB9DC6 /* User.swift in Sources */,
+				F12BD6082968453E00AA445E /* UIColorExt.swift in Sources */,
 				F1ECCB67295A41B200FB9DC6 /* SceneDelegate.swift in Sources */,
 				F12D6B1D29659E73006039FF /* PhotosCVC.swift in Sources */,
 				F119C4F4295B9806003CA3A8 /* ToDosTVC.swift in Sources */,
